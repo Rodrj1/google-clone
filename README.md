@@ -18,7 +18,8 @@ For local use
 
 ````
 Get a key from eXTReMe-IP-LOOKUP. Name it NEXT_PUBLIC_IP_EXTREME_KEY
-Get a key from Programmable Search Engine documentation. Name it GOOGLE_SEARCH_KEY. A context is needed and is also provided by PSE. Name it CX_KEY
+Get a key from Programmable Search Engine documentation. Name it GOOGLE_SEARCH_KEY.
+A context also provided by Programmable Search Engine. Name it CX_KEY
 
 ````
 
