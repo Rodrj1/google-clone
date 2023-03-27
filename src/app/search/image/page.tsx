@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { PaginationButtons } from '@/components/PaginationButtons';
 import { SearchError } from '@/components/SearchError';
 import { WebImageArticle } from '@/components/WebImageArticle';
