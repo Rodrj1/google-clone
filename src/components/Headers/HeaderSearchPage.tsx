@@ -24,7 +24,9 @@ export default function HeaderSearchPage() {
 
           <SVGGridDots />
 
-          <button className="btn-pink">Sign In</button>
+          <button className="btn-pink">
+            <Link href={'https://myaccount.google.com/'}>Sign In</Link>
+          </button>
         </div>
       </header>
 

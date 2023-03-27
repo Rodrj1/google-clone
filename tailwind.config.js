@@ -33,5 +33,5 @@ module.exports = {
       cyan: '#03edf9',
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar'),],
 };

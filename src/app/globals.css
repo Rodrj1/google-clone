@@ -65,4 +65,8 @@ b {
     @apply text-white transition-colors hover:text-grey-200 cursor-pointer
   }
 
+  .google-app {
+    @apply flex flex-col items-center justify-center
+  }
+
 }

@@ -30,7 +30,7 @@ export default function Search() {
           Google Search
         </button>
 
-        <div className="flex justify-center items-center disabled:opacity-70 w-36 h-10">
+        <div className="flex justify-center items-center disabled:opacity-70 w-36 h-10 overflow-hidden">
           {loadingRandom == false ? (
             <button className="btnSearch" onClick={randomSearch}>
               I am feeling lucky

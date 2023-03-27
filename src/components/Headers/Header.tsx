@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SVGGridDots } from '../Svgs';
+import { GoogleAppsHandler } from '../GoogleAppsHandler';
 
 export default function Header() {
   return (
@@ -18,9 +18,11 @@ export default function Header() {
         Images
       </Link>
 
-      <SVGGridDots />
+      <GoogleAppsHandler />
 
-      <button className="btn-pink">Sign In</button>
+      <button className="btn-pink">
+        <Link href={'https://myaccount.google.com/'}>Sign In</Link>
+      </button>
     </header>
   );
 }
