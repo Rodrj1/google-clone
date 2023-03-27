@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Georgia, serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+b {
+  color: #d35656;
+}
+
+@layer components {
+
+  .btnSearch {
+    @apply bg-blue-700 bg-opacity-30 rounded-md text-sm text-white hover:ring-1 hover:ring-grey-200 focus:outline-none active:ring-blue-100 hover:shadow-md w-36 h-10 transition-shadow hover:text-grey-200;
+  }
+
+  .hover-transition-grey {
+    @apply hover:text-grey-200 transition-colors cursor-pointer;
+  }
+
+  .btn-pink {
+    @apply bg-blue-700 text-white p-2 rounded-lg w-36
+  }
+
+  .svg-default {
+    @apply text-white transition-colors hover:text-grey-200 cursor-pointer
+  }
+
+}
