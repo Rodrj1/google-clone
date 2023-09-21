@@ -35,8 +35,8 @@ export default async function WebSearchPage({ searchParams }: Props) {
       <ul className="grid md:grid-cols-2 grid-flow-row gap-5 w-full md:w-[90%] p-2 md:p-0">
         {responseArticles &&
           responseArticles.map((item: WebArticle) => (
-            <li>
-            <WebArticle key={item.title} webArticle={item} />
+            <li key={item.title}>
+            <WebArticle webArticle={item} />
             </li>
           ))}
       </ul>

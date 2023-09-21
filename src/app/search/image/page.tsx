@@ -23,8 +23,8 @@ export default async function ImageSearchPage({ searchParams }: Props) {
     <section className="justify-center items-center text-[#f4f4f4] px-3 flex flex-col mt-5 h-auto ">
       <ul className="flex flex-wrap gap-5 justify-center">
         {responseArticles.map((article) => (
-          <li>
-            <WebImageArticle key={article.link} webArticle={article} />
+          <li key={article.link}>
+            <WebImageArticle webArticle={article} />
           </li>
         ))}
       </ul>
