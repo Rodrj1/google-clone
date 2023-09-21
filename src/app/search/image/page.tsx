@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 
 import { PaginationButtons } from '@/components/PaginationButtons';
 import { SearchError } from '@/components/SearchError';
@@ -20,12 +20,14 @@ export default async function ImageSearchPage({ searchParams }: Props) {
   if (!responseArticles) return <SearchError />;
 
   return (
-    <section className="justify-center items-center text-white px-3 flex flex-col mt-5 h-auto ">
-      <div className="flex flex-wrap h-auto gap-1">
+    <section className="justify-center items-center text-[#f4f4f4] px-3 flex flex-col mt-5 h-auto ">
+      <ul className="flex flex-wrap gap-5 justify-center">
         {responseArticles.map((article) => (
-          <WebImageArticle key={article.link} webArticle={article} />
+          <li>
+            <WebImageArticle key={article.link} webArticle={article} />
+          </li>
         ))}
-      </div>
+      </ul>
 
       <PaginationButtons />
     </section>

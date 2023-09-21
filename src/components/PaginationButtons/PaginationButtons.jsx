@@ -14,7 +14,7 @@ export default function PaginationButtons() {
     <div className="flex justify-between m-5 w-5/6">
       {index >= 10 && (
         <Link
-          className="flex gap-2  items-center"
+          className="flex gap-2 items-center text-sm hover:underline"
           href={`${pathname}?searchTerm=${searchTerm}&start=${index - 10}`}
         >
           <SVGArrowLeft />
@@ -27,7 +27,7 @@ export default function PaginationButtons() {
           <div className="invisible"> </div>
 
           <Link
-            className="flex gap-2  items-center"
+            className="flex gap-2 items-center text-sm hover:underline"
             href={`${pathname}?searchTerm=${searchTerm}&start=${index + 10}`}
           >
             <span>Next Page</span>
@@ -36,7 +36,7 @@ export default function PaginationButtons() {
         </>
       ) : (
         <Link
-          className="flex gap-2  items-center"
+          className="flex gap-2 items-center text-sm hover:underline"
           href={`${pathname}?searchTerm=${searchTerm}&start=${index + 10}`}
         >
           <span>Next Page</span>

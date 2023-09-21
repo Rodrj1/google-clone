@@ -13,6 +13,7 @@
 * {
   margin: 0;
   overflow-x: hidden;
+  color: #f4f4f4;
 }
 
 html, body {
@@ -23,7 +24,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background: #202124;
 }
 
 img, picture, video, canvas, svg {
@@ -43,22 +44,18 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-b {
-  color: #d35656;
-}
-
 @layer components {
 
   .btnSearch {
-    @apply bg-blue-700 bg-opacity-30 rounded-md text-sm text-white hover:ring-1 hover:ring-grey-200 focus:outline-none active:ring-blue-100 hover:shadow-md w-36 h-10 transition-shadow hover:text-grey-200;
+    @apply bg-gray-600 bg-opacity-30 rounded-md text-sm text-white  border border-transparent hover:border-gray-400 focus:outline-none active:border-gray-400 hover:shadow-md w-36 h-10 transition-shadow hover:text-grey-200;
   }
 
   .hover-transition-grey {
     @apply hover:text-grey-200 transition-colors cursor-pointer;
   }
 
-  .btn-pink {
-    @apply bg-blue-700 text-white p-2 rounded-lg w-36
+  .btn-blue {
+    @apply bg-sky-700 text-white p-2 rounded-lg w-36 text-center
   }
 
   .svg-default {
@@ -67,6 +64,10 @@ b {
 
   .google-app {
     @apply flex flex-col items-center justify-center
+  }
+
+  b {
+    @apply text-red-400
   }
 
 }

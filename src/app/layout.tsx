@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-auto w-screen">
-      <body className="min-h-screen flex flex-col justify-between relative  w-screen">
+      <body
+        className=" min-h-screen flex flex-col justify-between relative  w-screen"
+      >
         {children}
         <Footer />
       </body>

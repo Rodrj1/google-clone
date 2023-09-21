@@ -14,7 +14,7 @@ export default function SearchHeaderOptions() {
   };
 
   return (
-    <ul className="flex gap-5 text-white bg-opacity-5 bg-pink-200 px-44 pb-2 max-[639px]:px-20 border-b border-blue-400 border-opacity-30">
+    <ul className="flex gap-5 text-[#f4f4f4] pl-[5%] md:pl-[10%]">
       <li
         onClick={() => selectOption('All')}
         className={`hover-transition-grey p-2 ${

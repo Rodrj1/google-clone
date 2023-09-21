@@ -26,18 +26,20 @@ export default async function WebSearchPage({ searchParams }: Props) {
   if (!responseArticles) return <SearchError />;
 
   return (
-    <div className="text-white px-44 flex flex-col gap-5 max-[639px]:px-4 max-[639px]:gap-10 justify-center items-center">
-      <p className="pt-3 max-[600px]:w-full text-blue-400">
+    <div className="flex flex-col gap-5 w-full justify-center items-center">
+      <p className="pt-3 text-sky-500 text-center text-xs md:text-base">
         About {responseContext?.formattedTotalResults} results (
         {responseContext?.formattedSearchTime} seconds)
       </p>
 
-      <div className="xl:flex xl:flex-row xl:flex-wrap xl:gap-5 xl:justify-center xl:items-center">
+      <ul className="grid md:grid-cols-2 grid-flow-row gap-5 w-full md:w-[90%] p-2 md:p-0">
         {responseArticles &&
           responseArticles.map((item: WebArticle) => (
+            <li>
             <WebArticle key={item.title} webArticle={item} />
+            </li>
           ))}
-      </div>
+      </ul>
 
       <PaginationButtons />
     </div>

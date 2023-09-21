@@ -11,7 +11,7 @@ export default function Search() {
     <>
       <form
         onSubmit={(e) => handleOnSubmit(e)}
-        className="flex w-full xl:w-3/6 m5-5 mx-auto max-w-[80%] border border-grey-400 border-opacity-30 hover:border-grey-400 transition-all rounded-full px-5 py-3 hover:shadow-md focus-within:shadow-md my-8"
+        className="flex w-full md:w-2/6 mx-auto border border-gray-600 hover:border-gray-400 transition-all rounded-full px-5 py-3 hover:shadow-md focus-within:shadow-md my-8 focus:bg-gray-600 hover:bg-gray-600/30"
       >
         <SVGSearch />
 
@@ -19,7 +19,7 @@ export default function Search() {
           type={'text'}
           value={text}
           onChange={(e) => handleOnChange(e)}
-          className="bg-transparent flex-grow focus:outline-none text-white px-2"
+          className="bg-transparent  flex-grow focus:outline-none text-white px-2"
         />
 
         <SVGMic />

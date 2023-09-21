@@ -14,5 +14,5 @@ export default function Country() {
 
   getCountry();
 
-  return <h2 className='flex items-center justify-center w-auto max-w-[150px] p-1 rounded-full bg-blue-800 bg-opacity-20'>{country == '' ? 'US' : country}</h2>;
+  return <span className='w-auto'>{country == '' ? 'US' : country.toUpperCase()}</span>;
 }
