@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="flex flex-col py-5 px-5 gap-5 text-xs text-gray-400 w-full">
       <Country />
 
-      <div className="flex justify-between flex-col sm:flex-row">
+      <div className="flex justify-between flex-col sm:flex-row gap-5">
         <ul className="flex gap-5 flex-wrap">
           <Link
             className="hover:underline"

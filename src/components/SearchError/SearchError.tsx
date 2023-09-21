@@ -1,6 +1,6 @@
 export default function SearchError() {
   return (
-    <div className="flex flex-col gap-5 text-white px-2 md:px-44 pt-5">
+    <div className="flex flex-col gap-5 text-[f4f4f4] pl-[5%] md:pl-[9%]">
       <h1>Your search did not match any documents.</h1>
       <h2>Suggestions:</h2>
       <ul>
