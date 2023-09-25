@@ -3,7 +3,7 @@ import { GoogleAppsHandler } from '../GoogleAppsHandler';
 
 export default function Header() {
   return (
-    <header className="text-sm text-[#f4f4f4] flex items-center px-1 md:px-5 justify-evenly md:justify-end w-full">
+    <header className="text-sm text-[#f4f4f4] flex items-center py-2 md:px-5 justify-evenly md:justify-end w-full">
       <nav className="flex items-center gap-1 mr-1 sm:gap-5 sm:mr-5">
         <Link
           href="https://mail.google.com"
